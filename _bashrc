@@ -66,14 +66,16 @@ HISTFILESIZE=2000
 #unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir
-case "$TERM" in
-xterm*|rxvt*)
-    #PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
-    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u\w\a\]$PS1"
-    ;;
-*)
-    ;;
-esac
+#case "$TERM" in
+#xterm*|rxvt*)
+#    #PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+#    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u\w\a\]$PS1"
+#    ;;
+#*)
+#    ;;
+#esac
+
+PS1="\[\033[36m\]\W\[\033[0m\] $"
 
 # enable color support of ls and also add handy aliases
 #if [ -x /usr/bin/dircolors ]; then
@@ -91,13 +93,14 @@ esac
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-alias ls='ls --color=auto -aFh'
+#alias ls='ls --color=auto -aFh'
+alias ls='ls -aFhG'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
+#alias grep='grep --color=auto'
+#alias fgrep='fgrep --color=auto'
+#alias egrep='egrep --color=auto'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -124,7 +127,7 @@ alias egrep='egrep --color=auto'
 #fi
 
 # move to desktop
-cd Desktop
+#cd Desktop
 
 # combine cd with ls
 function cdls(){
@@ -146,3 +149,7 @@ export LESS='-X -i -P ?f%f:(stdin).  ?lb%lb?L/%L..  [?eEOF:?pb%pb\%..]'
 
 # environment variable for desktop@C-drive
 #export mydesktop="/mnt/c/Users/<USER_NAME>/Desktop"
+
+export PATH=$PATH:/Users/admin/.nodebrew/current/bin
+alias vi='nvim'
+alias vim='nvim'

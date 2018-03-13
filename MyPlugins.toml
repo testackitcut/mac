@@ -12,3 +12,12 @@ repo = 'vim-scripts/zoom.vim'
 
 [[plugins]]
 repo = 'cocopon/vaffle.vim'
+
+[[plugins]]
+repo = 'rhysd/nyaovim-markdown-preview'
+
+[[plugins]]
+repo = 'rhysd/nyaovim-popup-tooltip'
+
+[[plugins]]
+repo = 'rhysd/nyaovim-mini-browser'
