@@ -23,6 +23,62 @@
                   "key_code": "left_control"
                }
             ]
+         },
+         { 
+            "//": "CitrixViewer利用時は「かなキー」を「Ctrl + f8」",
+            "type": "basic",
+            "from": {
+               "key_code": "lang1"
+            },
+            "to": [
+               {
+                  "key_code": "f8",
+                  "modifiers": ["control"]
+               }
+            ],
+            "conditions": [
+               {
+                  "type": "frontmost_application_if",
+                  "bundle_identifiers": [ "^com\\.citrix\\.XenAppViewer" ]
+               }
+            ]
+         },
+         { 
+            "//": "CitrixViewer利用時は「英数キー」を「Ctrl + f9」",
+            "type": "basic",
+            "from": {
+               "key_code": "lang2"
+            },
+            "to": [
+               {
+                  "key_code": "f9",
+                  "modifiers": ["control"]
+               }
+            ],
+            "conditions": [
+               {
+                  "type": "frontmost_application_if",
+                  "bundle_identifiers": [ "^com\\.citrix\\.XenAppViewer" ]
+               }
+            ]
+         },
+         { 
+            "//": "CitrixViewer利用時は「option」を「left-command (= Alt)」",
+            "type": "basic",
+            "from": {
+               "key_code": "left_option"
+            },
+            "to": [
+               {
+                  "key_code": "left-command"
+               }
+            ],
+            "conditions": [
+               {
+                  "type": "frontmost_application_if",
+                  "bundle_identifiers": [ "^com\\.citrix\\.XenAppViewer" ]
+               }
+            ]
          }
       ]
     }
