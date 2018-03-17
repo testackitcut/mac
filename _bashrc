@@ -153,3 +153,9 @@ export LESS='-X -i -P ?f%f:(stdin).  ?lb%lb?L/%L..  [?eEOF:?pb%pb\%..]'
 export PATH=$PATH:/Users/admin/.nodebrew/current/bin
 alias vi='nvim'
 alias vim='nvim'
+
+# define "cdl" command for japanese directories
+#
+
+alias cdl='a=(`ls -1`) ; ls -1 | less -N ; read b ; cd ${a[$b-1]}'
+#alias cdl='a=(`ls -1`) ; ls -1 | cat -n ; read b ; cd ${a[$b-1]}'
