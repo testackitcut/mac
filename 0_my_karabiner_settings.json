@@ -5,8 +5,7 @@
     "File Path: /Applications/Citrix Receiver.app/Contents/Helpers/Citrix Viewer.app/Contents/MacOS/Citrix Viewer",
     "",
     "アプリの設定は、~/.config/karabiner/karabiner.jsonファイルに保存されます。",
-    "自作のキー変換を設定したファイルの保存場所は、~/.config/karabiner/assets/complex_modificationsです。このディレクトリに保存すると、設定画面の「Complex Modifications - Add rule」に表示されるようになります。"
-  ],
+    "自作のキー変換を設定したファイルの保存場所は、~/.config/karabiner/assets/complex_modificationsです。このディレクトリに保存すると、設定画面の「Complex Modifications - Add rule」に表示されるようになります。" ],
   "title": "My Keybinds",
   "rules": [
     {
@@ -23,6 +22,12 @@
                   "key_code": "left_control"
                }
             ]
+         },
+         {
+            "//": "EscをEsc + IMEoff に変更",
+            "type": "basic",
+            "from": { "key_code": "escape", "modifiers": { "optional": [ "any" ] } },
+            "to": [ { "key_code": "lang2" }, { "key_code": "escape" } ]
          },
          { 
             "//": "CitrixViewer利用時は「かなキー」を「Ctrl + 8」",
