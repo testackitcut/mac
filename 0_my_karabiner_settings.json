@@ -1,9 +1,6 @@
 {
   "//": [
     "CitrixViewerの設定は Ctrl := control, Alt := left-command とすること",
-    "Bundle Identifier:  com.citrix.XenAppViewer",
-    "File Path: /Applications/Citrix Receiver.app/Contents/Helpers/Citrix Viewer.app/Contents/MacOS/Citrix Viewer",
-    "",
     "アプリの設定は、~/.config/karabiner/karabiner.jsonファイルに保存されます。",
     "自作のキー変換を設定したファイルの保存場所は、~/.config/karabiner/assets/complex_modificationsです。このディレクトリに保存すると、設定画面の「Complex Modifications - Add rule」に表示されるようになります。" ],
   "title": "My Keybinds",
