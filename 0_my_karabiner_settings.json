@@ -25,14 +25,14 @@
             ]
          },
          { 
-            "//": "CitrixViewer利用時は「かなキー」を「Ctrl + f8」",
+            "//": "CitrixViewer利用時は「かなキー」を「Ctrl + 8」",
             "type": "basic",
             "from": {
                "key_code": "lang1"
             },
             "to": [
                {
-                  "key_code": "f8",
+                  "key_code": "8",
                   "modifiers": ["control"]
                }
             ],
@@ -44,14 +44,14 @@
             ]
          },
          { 
-            "//": "CitrixViewer利用時は「英数キー」を「Ctrl + f9」",
+            "//": "CitrixViewer利用時は「英数キー」を「Ctrl + 9」",
             "type": "basic",
             "from": {
                "key_code": "lang2"
             },
             "to": [
                {
-                  "key_code": "f9",
+                  "key_code": "9",
                   "modifiers": ["control"]
                }
             ],
