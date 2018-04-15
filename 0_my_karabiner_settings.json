@@ -41,18 +41,6 @@
                   "bundle_identifiers": [ "^com\\.citrix\\.XenAppViewer" ]
                }
             ]
-         },
-         { 
-            "//": "CitrixViewer利用時は「option」を「left-command (= Alt)」",
-            "type": "basic",
-            "from": { "key_code": "left_option" },
-            "to": [ { "key_code": "left_command" } ],
-            "conditions": [
-               {
-                  "type": "frontmost_application_if",
-                  "bundle_identifiers": [ "^com\\.citrix\\.XenAppViewer" ]
-               }
-            ]
          }
       ]
     }

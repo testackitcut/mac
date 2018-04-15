@@ -221,6 +221,34 @@ set visualbell t_vb=
 "let &t_EI.="\e[1 q"
 "let &t_te.="\e[0 q"
 
+
+"Ctrl-l に Esc を割り当て
+inoremap <C-l> <ESC>
+cnoremap <C-l> <ESC>
+
+
+"ノーマルモードでShift + スペースで全角スペースを挿入．
+nnoremap <S-Space> i　<ESC>
+
+" markdownのシンタックスで強調表示させる
+hi link htmlItalic LineNr
+hi link htmlBold WarningMsg
+hi link htmlBoldItalic ErrorMsg
+
+"ノーマルモードで tab を半角スペース2個に変更。
+nnoremap <tab> i<Space><Space><ESC>
+
+
+" gvimをショートカットから起動したときにVaffleを実行し、ブックマークフォルダを開くためにコマンドを定義する。
+" gvimのショートカットを gvim.exe -c VaffleStartUp と設定しておくこと。
+command! VaffleStartUp :Vaffle<Space>/Users/admin
+
+
+" Vaffleでブックマークを利用するため、ショートカット一覧フォルダパスの貼り付け
+"cnoremap <M-b> Vaffle<Space>/Users/admin/Bookmarks
+nnoremap <M-b> :Vaffle<Space>/Users/admin/Bookmarks<CR>
+nnoremap <M-B> :tabe<CR>:Vaffle<Space>/Users/admin/Bookmarks<CR>
+
 " }}}
 
 " 文字コードの自動認識, 改行コードの自動認識 {{{
