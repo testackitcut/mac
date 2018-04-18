@@ -313,7 +313,12 @@ autocmd FileType vaffle nmap <buffer> x :call ExecuteFileByVaffle()<CR>
 
 function! ExecuteFileByVaffle()
     execute "normal v$h\"ay"
-    execute "!start " . vaffle#buffer#extract_path_from_bufname(expand('%:p')) . '\' . substitute(@a, '^ \+', '', '')
+
+    "For Windows
+    "execute "!start " . vaffle#buffer#extract_path_from_bufname(expand('%:p')) . '\' . substitute(@a, '^ \+', '', '')
+
+    "For Mac
+    execute "!open " . vaffle#buffer#extract_path_from_bufname(expand('%:p')) . '/' . substitute(@a, '^ \+', '', '')
 endfunction
 
 

@@ -159,3 +159,7 @@ alias vim='nvim'
 
 alias cdl='a=(`ls -1`) ; ls -1 | less -N ; read b ; cd ${a[$b-1]}'
 #alias cdl='a=(`ls -1`) ; ls -1 | cat -n ; read b ; cd ${a[$b-1]}'
+
+#homebrew-cask
+#After brew is installed, run "brew tap caskroom/cask" on your terminal.
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
