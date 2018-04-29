@@ -17,24 +17,6 @@
             "to": [ { "key_code": "left_control" } ]
          },
          { 
-            "//": "「Ctrl + c」を「Command + c」",
-            "type": "basic",
-            "from": { "key_code": "c", "modifiers": { "mandatory": [ "control" ] } },
-            "to": [ { "key_code": "c", "modifiers": ["command"] } ]
-         },
-         { 
-            "//": "「Ctrl + v」を「Command + v」",
-            "type": "basic",
-            "from": { "key_code": "v", "modifiers": { "mandatory": [ "control" ] } },
-            "to": [ { "key_code": "v", "modifiers": ["command"] } ]
-         },
-         { 
-            "//": "「Ctrl + a」を「Command + a」",
-            "type": "basic",
-            "from": { "key_code": "a", "modifiers": { "mandatory": [ "control" ] } },
-            "to": [ { "key_code": "a", "modifiers": ["command"] } ]
-         },
-         { 
             "//": "CitrixViewer利用時は「かなキー」を「Ctrl + 8」",
             "type": "basic",
             "from": { "key_code": "lang1" },

@@ -175,7 +175,7 @@ noremap <C-j> i<CR><ESC>
 nnoremap <ESC><ESC> :nohlsearch<Enter>:<BS>
 
 "Vimでコピー（ヤンク）した文字は、システムへクリップボード
-set clipboard=unnamed
+set clipboard+=unnamed
 
 "検索時に検索ワードを常にセンターに持ってくる
 nnoremap n nzz
@@ -248,6 +248,23 @@ command! VaffleStartUp :Vaffle<Space>/Users/admin
 "cnoremap <M-b> Vaffle<Space>/Users/admin/Bookmarks
 nnoremap <M-b> :Vaffle<Space>/Users/admin/Bookmarks<CR>
 nnoremap <M-B> :tabe<CR>:Vaffle<Space>/Users/admin/Bookmarks<CR>
+
+"ノーマルモードでShift + スペースで全角スペースを挿入．
+nnoremap <S-Space> i　<ESC>
+
+" markdownのシンタックスで強調表示させる
+hi link htmlItalic LineNr
+hi link htmlBold WarningMsg
+hi link htmlBoldItalic ErrorMsg
+
+"ノーマルモードで tab を半角スペース2個に変更。
+nnoremap <tab> i<Space><Space><ESC>
+
+"Ctrl-l に Esc を割り当て
+inoremap <C-l> <ESC>
+cnoremap <C-l> <ESC>
+nnoremap <C-l> <ESC>
+
 
 " }}}
 
