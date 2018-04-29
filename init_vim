@@ -264,6 +264,7 @@ nnoremap <tab> i<Space><Space><ESC>
 inoremap <C-l> <ESC>
 cnoremap <C-l> <ESC>
 nnoremap <C-l> <ESC>
+vnoremap <C-l> <ESC>
 
 
 " }}}
