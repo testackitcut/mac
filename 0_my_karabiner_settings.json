@@ -16,6 +16,12 @@
             "from": { "key_code": "caps_lock" },
             "to": [ { "key_code": "left_control" } ]
          },
+         {
+            "//": "Ctrl-l := EISU + ESC + ESC",
+            "type": "basic",
+            "from": { "key_code": "l", "modifiers": { "mandatory": [ "control" ] } },
+            "to": [ { "key_code": "japanese_eisuu" }, { "key_code": "escape" } , { "key_code": "escape" } ]
+         },
          { 
             "//": "CitrixViewer利用時は「かなキー」を「Ctrl + 8」",
             "type": "basic",
